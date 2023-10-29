@@ -1,0 +1,541 @@
+
+*{
+    cursor: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+}
+ 
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+
+    width: 100%;
+
+}
+
+#loader{
+    /* display: none; */
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    height: 100vh;
+    background-color: #111;
+    color: whitesmoke;
+}
+
+#topheading h5{
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;
+}
+
+#soni{
+    font-weight: bolder;
+    font-size: 10vw;
+    font-family: "Mazius Review 20.09";
+    color: #14cf93;
+    font-style: italic;
+}
+
+#loader #topheading{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,0);
+    /* justify-content: center; */
+}
+
+#loader h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 6vw;
+    font-weight: 600;
+   
+}
+
+.reveal .parent{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.reveal .parent .child span{
+    display: inline-block;
+}
+.reveal .parent .child{
+    display: block;
+   
+}
+
+#loader h1 span{ 
+    font-family: "Mazius Review 20.09";
+    /* color: #14cf93; */
+    
+}
+
+
+#green{
+    /* display: none; */
+    position: absolute;
+    z-index: 9999;
+    height: 0;
+    width: 100%;
+    bottom: 0;
+    background-color: #14cf93;
+}
+
+#home{
+    width: 100%;
+    height: 500vh;
+    background-color: #ffffff;
+
+}
+
+#home #nav{ 
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10vw;
+    height: 85px;
+    /* background-color: red; */
+}
+
+#nav a{
+    position: relative;
+    margin-top: 7%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 12px;
+    color: black;
+}
+#nav a .line{
+    position: absolute;
+    right: 0;
+    bottom: 0 ;
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s ;
+    background-color: black;
+}
+
+#nav a:hover .line{
+   
+    width: 0%;
+   
+}
+
+
+.row{
+    margin-top: 5vw;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #333;
+    line-height: 1;
+    align-items: center;
+    /* background-color: red; */
+    padding: 0 5vw;
+}
+
+.row  h1{
+    font-size: 12vw;
+ 
+    font-weight: 500;
+     /* background-color: red; */
+}
+
+.row  text{
+    margin-top: 4vw;
+    
+}
+.row  h5{
+    opacity: 0.4;
+    
+}
+
+.row:nth-child(3){
+    margin-top: 0;
+}
+
+.row svg{
+    opacity: 0;
+    margin: 0 4vw;
+
+    height: 150px;
+}
+
+path,polyline{
+    stroke: #14cf93;
+}
+
+
+
+#imagenry{
+    display: flex ;
+    margin-top: 10vw;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5vw 7vw;
+}
+
+#imagenry #imgleft{
+    width: 40%;
+    height: auto;
+    /* background-color: red; */
+}
+
+#imgleft h1{
+    font-size: 2.4vw;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #333;
+}
+#imgleft h1 span{
+    color: #14cf93;
+    font-family: "Mazius Review 20.09";
+    font-style: italic;
+    font-size: 3vw;
+    font-weight: 400;
+}
+
+#imgright{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 60%;
+
+    
+}
+#imgright .imgcntr{
+
+  position: absolute;
+    height: 26vw;
+    width: 28vw;
+    margin-bottom: 12vw;
+    border-radius: 1vw;
+    filter: grayscale();
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 3s;
+    
+
+}
+#imgright .imgcntr:hover{
+    filter: grayscale(0);
+
+}
+
+#imgright .imgcntr:nth-child(1){
+    transform:  translate(-40%, -10%) rotate(-20deg);
+    background-image: url(https://images.unsplash.com/photo-1691167272398-88808c1494a0?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0M3x8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+  
+}
+#imgright .imgcntr:nth-child(2){
+    transform: translate(-16%, 0%)  rotate(-12deg) ;
+    background-image: url(https://images.unsplash.com/photo-1698217111348-d24d7cac9e17?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4NXx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#imgright .imgcntr:nth-child(3){
+    transform: translate(12%,  10%) rotate(0deg);
+    background-image: url(https://images.unsplash.com/photo-1636392281492-8b5aff7f75f1?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNXx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#work{
+    position: relative;
+    transition: background-color cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+}
+#work::before{
+    content: "";
+    top: -75px;
+    position: absolute;
+    width: 100%;
+height: 150px;
+transform: rotate(-180deg);
+    background-image: url(https://abhishekjha.me/rip.f6d7c4dd.svg);
+    background-size: cover;
+    
+}
+
+#work .workrow{
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.workrow h1{
+    margin-left: 200px;
+    font-size: 7vw;
+}
+.workrow #large{
+    font-family: "Mazius Review 20.09";
+    color: #14cf93;
+    font-style: italic;
+}
+
+.workrow svg{
+    width: 5vw;
+    margin-right: 200px;
+    transform: rotate(90deg);
+}
+.o-ui-arrow path{
+    stroke: rgba(11, 11, 11, 0.3);
+}
+
+.workrow #small{
+    font-size: 30px;
+}
+
+#images{
+
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 5vw;
+    align-items: flex-end;
+    position: relative;
+
+}
+
+#cont1{
+    width: 45%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    border-radius: 50px;
+    left: -2.5%;
+    top: -3%;
+}
+
+#cont1 img{
+    transition: filter cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+    width: 105%;
+}
+#cont2{
+    overflow: hidden;
+    width: 30%;
+    height: 28vw;
+    left: -4%;
+    top: -3%;
+    border-radius: 50px;
+}
+#cont2 img{
+    transition: filter cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+    width: 105%;
+}
+
+#cursor{
+    position: fixed;
+    width: 17vw;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    pointer-events: none; 
+}
+#cursor>div{
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+#elem{
+    margin-top: 10%;
+    width: 100%;
+    position: relative;
+}
+
+
+#cursor .crow{
+    margin-top: 1000px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: .7vw;
+}
+
+.crow .ccircle{
+    width: 2vw;
+    height: 2vw;
+    border: 2px solid #141414;
+    border-radius: 12px;
+}
+
+.crow .ccapsule{
+    padding: .7vw 3vw;
+    border-radius: 100%;
+    background-color: #fff;
+
+}
+#elem img{
+   
+    width: 100%;
+    height: 13vw;
+    border-radius: 10px;
+    opacity: 0;
+    animation: an 4s linear infinite;
+    position: absolute;
+}
+
+#elem img:nth-child(2){
+    animation-delay: 1s;
+}
+#elem img:nth-child(3){
+    animation-delay: 2s;
+}
+#elem img:nth-child(4){
+    animation-delay: 3s;
+}
+#elem img:nth-child(5){
+    animation-delay: 4s;
+}
+
+@keyframes an{
+    0%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+    }
+    21%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+
+}
+.loader {
+    margin-top: 35%;
+    background: transparent;
+    background: transparent;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+    animation: fadeOut 4s forwards;
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.loader-inner {
+    bottom: 0;
+    height: 60px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+
+.loader-line-wrap {
+    animation: 
+		spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite
+	;
+    box-sizing: border-box;
+    height: 50px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transform-origin: 50% 100%;
+    width: 100px;
+}
+.loader-line {
+    border: 4px solid transparent;
+    border-radius: 100%;
+    box-sizing: border-box;
+    height: 100px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+.loader-line-wrap:nth-child(1) { animation-delay: -50ms; }
+.loader-line-wrap:nth-child(2) { animation-delay: -100ms; }
+.loader-line-wrap:nth-child(3) { animation-delay: -150ms; }
+.loader-line-wrap:nth-child(4) { animation-delay: -200ms; }
+.loader-line-wrap:nth-child(5) { animation-delay: -250ms; }
+
+.loader-line-wrap:nth-child(1) .loader-line {
+    border-color: hsl(0, 80%, 60%);
+    height: 90px;
+    width: 90px;
+    top: 7px;
+}
+.loader-line-wrap:nth-child(2) .loader-line {
+    border-color: hsl(60, 80%, 60%);
+    height: 76px;
+    width: 76px;
+    top: 14px;
+}
+.loader-line-wrap:nth-child(3) .loader-line {
+    border-color: hsl(120, 80%, 60%);
+    height: 62px;
+    width: 62px;
+    top: 21px;
+}
+.loader-line-wrap:nth-child(4) .loader-line {
+    border-color: hsl(180, 80%, 60%);
+    height: 48px;
+    width: 48px;
+    top: 28px;
+}
+.loader-line-wrap:nth-child(5) .loader-line {
+    border-color: hsl(240, 80%, 60%);
+    height: 34px;
+    width: 34px;
+    top: 35px;
+}
+
+@keyframes spin {
+    0%, 15% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
